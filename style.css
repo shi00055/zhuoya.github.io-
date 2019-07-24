@@ -1,0 +1,103 @@
+/* css reset*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+.gallery{
+    display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+}
+
+.gallery img{
+    width: 300px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 1s;
+    height: 200px;
+}
+
+.gallery img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.15);
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 40px;
+    padding:20px 20px;
+    display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn0F0QED0iTnD89Cdq8HU3YiX3GAtlEnjNTAm2c42RuSDtNt5fBg);
+}
+
+p{
+  padding: 30px;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 70px;
+  text-align: center;
+  color: gainsboro;
+  text-shadow: -2px -2px 0 black,
+                0 -2px 0px black,
+                -1px 0 0 black,
+                2px 2px 2px black;
+}
+
+.theimage{
+    margin: auto;
+    display: block;
+    max-width: 450px;
+}
+
+.overlay{
+    position: fixed;
+    bottom: 600px;
+    display: none;
+}
+
+
+.show{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .theimage{
+        max-width: 600px;
+        margin: auto;
+        display: block;
+    }
+}
+
+.overlay{
+   position:fixed;
+   display: none;
+   bottom: 200px;
+}
+
+.show{
+    display: block;
+    
+}
+ 
+@media (min-width: 1028px) {
+.theimage{
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+}
+
+.overlay{
+    position: fixed;
+    display: none;
+    bottom: 0px;
+}
+
+.show{
+    display: block;
+}
+}
+  
+
+
